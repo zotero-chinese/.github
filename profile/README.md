@@ -13,7 +13,7 @@
 ## 有用的资源
 
 - [优雅地用 Zotero 进行文献管理和论文写作（Online）](https://zotero-cn.github.io/e-zotero-md)
-- [Citation Style Language 中文文档](https://zotero-cn.github.io/csl-docs-chinese)
+- [Citation Style Language 中文文档](https://zotero-cn.github.io/csl-doc-chinese)
 
 ## 贡献指南
 
