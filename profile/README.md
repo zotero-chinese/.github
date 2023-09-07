@@ -1,4 +1,4 @@
-## Zotero CN
+## Zotero Chinese
 
 > **Warning**
 >
@@ -6,17 +6,18 @@
 > 
 > This is not an [official Zotero organization](https://github.com/zotero)!
 
-这里是 Zotero CN，我们主要维护一些与 Zotero 有关的中文文档、资料以及程序。
-
-目前组织处于规划阶段，欢迎有共同维护意愿的人一起加入~
+这里是 Zotero Chinese，我们主要维护一些与 Zotero 有关的中文文档、资料以及程序。
 
 ## 有用的资源
 
-- [优雅地用 Zotero 进行文献管理和论文写作（Online）](https://zotero-cn.github.io/e-zotero-md)
-- [Citation Style Language 中文文档](https://zotero-cn.github.io/csl-doc-chinese)
+- [Zotero 百科全书](https://zotero-chinese.com)
+- [Zotero 插件合集](https://plugins.zotero-chinese.com)
+- [Zotero 中文网络转换器（translator）](https://github.com/l0o0/translators_CN)
+- [CSL 中文样式](https://github.com/redleafnew/Chinese-STD-GB-T-7714-related-csl/)
+- [Citation Style Language 中文文档](https://zotero-chinese.com/csl-dev-guide/)
 
 ## 贡献指南
 
-欢迎以 issue 与 pull request 的方式为本项目做出贡献！
+欢迎以 Issue 与 Pull Request 的方式为本项目做出贡献！
 
-组织内的文档均使用 [Markdown](https://baike.baidu.com/item/markdown) 语法书写，使用 [Mkdocs & Materials](https://squidfunk.github.io/mkdocs-material/) 构建在线页面，托管于 GitHub Pages 和 Gitee Pages，所有的文档书写时均应符合[《中文技术文档写作规范》](https://github.com/ruanyf/document-style-guide)，详情请参阅 [贡献指南](https://zotero-cn.github.io/contribution-guidelines) 。
+组织内的文档均使用 [Markdown](https://baike.baidu.com/item/markdown) 语法书写，书写时均应符合[《中文技术文档写作规范》](https://github.com/ruanyf/document-style-guide)，详情请参阅 [贡献指南](https://zotero-chinese.com/about/contributing/contributing) 。
