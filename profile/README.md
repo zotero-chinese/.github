@@ -1,6 +1,6 @@
-## Zotero Chinese
+## Zotero 中文社区（Zotero Chinese）
 
-> **Warning**
+> [!warning]
 >
 > 这里不是 [Zotero 官方组织](https://github.com/zotero) ！
 > 
@@ -20,4 +20,12 @@
 
 欢迎以 Issue 与 Pull Request 的方式为本项目做出贡献！
 
-组织内的文档均使用 [Markdown](https://baike.baidu.com/item/markdown) 语法书写，书写时均应符合[《中文技术文档写作规范》](https://github.com/ruanyf/document-style-guide)，详情请参阅 [贡献指南](https://zotero-chinese.com/about/contributing/contributing) 。
+组织内的文档均使用 [Markdown](https://theme-hope.vuejs.press/zh/cookbook/markdown/) 语法书写，书写时均应符合[《文档风格指南》](https://zotero-chinese.com/contributing/markdown.html)，详情请参阅[《贡献指南》](https://zotero-chinese.com/contributing/contributing.html) 。
+
+### 贡献者
+
+<div align="center" style="height:200px">
+  <div style="border: 2px solid #cecece;border-radius: 2px 2px;height:200px; width:400px;">
+    <img src="https://api.vaunt.dev/v1/github/entities/zotero-chinese/contributors?limit=50&format=svg&private=true" height="200"/>
+  </div>
+</div>
