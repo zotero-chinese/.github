@@ -1,8 +1,8 @@
 ## Zotero 中文社区（Zotero Chinese）
 
-> [!warning]
+> [!important]
 >
-> 这里不是 [Zotero 官方组织](https://github.com/zotero) ！
+> 这里不是 [Zotero 官方组织](https://github.com/zotero)！
 > 
 > This is not an [official Zotero organization](https://github.com/zotero)!
 
@@ -24,8 +24,4 @@
 
 ### 贡献者
 
-<div align="center" style="height:200px">
-  <div style="border: 2px solid #cecece;border-radius: 2px 2px;height:200px; width:400px;">
-    <img src="https://api.vaunt.dev/v1/github/entities/zotero-chinese/contributors?limit=50&format=svg&private=true" height="200"/>
-  </div>
-</div>
+[![](https://api.vaunt.dev/v1/github/entities/zotero-chinese/contributors?limit=50&format=svg&private=true)](https://community.vaunt.dev/board/zotero-chinese)
