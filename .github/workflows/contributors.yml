@@ -1,0 +1,41 @@
+name: update-contributors-svg
+
+on:
+  workflow_dispatch: # 用于手动触发
+  schedule:
+    - cron: "0 7 * * *" # 每天 7:00 定时执行
+
+jobs:
+  update-svg:
+    name: Update contributors SVG
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set node
+        uses: actions/setup-node@v3
+        with:
+          node-version: lts/*
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2.2.2
+        with:
+          version: 7
+
+      #   - name: Install deps
+      #     run: pnpm install
+
+      - name: Run SVG generation script
+        run: |
+          pnpx make-github-contributor-svg -t ${{ secrets.GITHUB_TOKEN }} -o zotero-chinese -r wiki
+          pnpx make-github-contributor-svg -t ${{ secrets.GITHUB_TOKEN }} -o zotero-chinese -r zotero-plugins
+          pnpx make-github-contributor-svg -t ${{ secrets.GITHUB_TOKEN }} -o l0o0 -r translators_CN
+          pnpx make-github-contributor-svg -t ${{ secrets.GITHUB_TOKEN }} -o redleafnew -r Chinese-STD-GB-T-7714-related-csl
+
+      - name: Commit
+        uses: EndBug/add-and-commit@v4
+        with:
+          message: "chore(workflow): update contributors image"
+          add: ".github-contributors/*"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
