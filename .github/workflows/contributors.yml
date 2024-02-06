@@ -38,5 +38,7 @@ jobs:
         with:
           message: "chore(workflow): update contributors image"
           add: ".github-contributors/*"
+          author_name: github-actions[bot]
+          author_email: github-actions[bot]@users.noreply.github.com
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
