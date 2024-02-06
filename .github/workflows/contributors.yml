@@ -10,15 +10,15 @@ jobs:
     name: Update contributors SVG
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Install pnpm
-        uses: pnpm/action-setup@v2.2.2
+        uses: pnpm/action-setup@v2
         with:
           version: 8
 
       - name: Set node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: pnpm
@@ -34,7 +34,7 @@ jobs:
           pnpm exec gh-contrib-svg -t ${{ secrets.GITHUB_TOKEN }} -o redleafnew -r Chinese-STD-GB-T-7714-related-csl
 
       - name: Commit
-        uses: EndBug/add-and-commit@v4
+        uses: EndBug/add-and-commit@v9
         with:
           message: "chore(workflow): update contributors image"
           add: ".github-contributors/*"
