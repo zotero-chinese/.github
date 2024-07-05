@@ -29,6 +29,7 @@ jobs:
       - name: Run SVG generation script
         run: |
           pnpm exec gh-contrib-svg -t ${{ secrets.GITHUB_TOKEN }} -o zotero-chinese -r wiki
+          pnpm exec gh-contrib-svg -t ${{ secrets.GITHUB_TOKEN }} -o zotero-chinese -r styles
           pnpm exec gh-contrib-svg -t ${{ secrets.GITHUB_TOKEN }} -o zotero-chinese -r zotero-plugins
           pnpm exec gh-contrib-svg -t ${{ secrets.GITHUB_TOKEN }} -o l0o0 -r translators_CN
           pnpm exec gh-contrib-svg -t ${{ secrets.GITHUB_TOKEN }} -o redleafnew -r Chinese-STD-GB-T-7714-related-csl
