@@ -6,16 +6,16 @@ on:
     - cron: "0 7 * * *" # 每天 7:00 定时执行
 
 jobs:
-  update-svg:
-    name: Update contributors SVG
+  update-repo-contributors:
+    name: Update contributors SVG for repos
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
 
       - name: Install pnpm
-        uses: pnpm/action-setup@v4
+        uses: pnpm/action-setup@v2
         with:
-          version: 9
+          version: 8
 
       - name: Set node
         uses: actions/setup-node@v4
@@ -37,9 +37,28 @@ jobs:
       - name: Commit
         uses: EndBug/add-and-commit@v9
         with:
-          message: "chore(workflow): update contributors image"
+          message: "chore: update contributors for repos [skip ci]"
           add: ".github-contributors/*"
           author_name: github-actions[bot]
           author_email: github-actions[bot]@users.noreply.github.com
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  update-org-contributors:
+    name: Update contributors for org
+    needs:
+      - update-repo-contributors
+    runs-on: ubuntu-latest
+    steps:
+      - name: Update contributors for org
+        uses: thinkasany/organize-contributors@master
+        with:
+          organize_name: zotero-chinese
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          png_path: .github-contributors/contributors.png
+          json_path: .github-contributors/contributors.json
+          branch: main
+          excludes_list: "ImgBotApp,github-actions[bot],actions-user,imgbot[bot],dependabot[bot],renovate[bot]"
+          committer_name: github-actions[bot]
+          committer_email: github-actions[bot]@users.noreply.github.com
+          commit_message: "chore: update contributors for org [skip ci]"
