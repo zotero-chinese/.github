@@ -2,4 +2,18 @@
 
 本仓库存储 Zotero 中文社区的 GitHub 信息。
 
-组织首页介绍存储于 `profile/README.md`，社区贡献者列表由 GitHub Action 每日自动生成，存储于 `.github-contributors/*.svg`。
+组织首页介绍存储于 `profile/README.md`。
+
+社区贡献者列表存储于 `.github-contributors/*.svg`。
+
+社区赞助者存储于 `sponsorkit/`。
+
+<!-- ## 赞助者
+
+![赞助者](../sponsorkit/sponsors.svg) -->
+
+## 致谢
+
+- [SponsorKit](https://github.com/antfu/sponsorkit)
+- [make-github-contributor-svg](https://github.com/ShenQingchuan/github-contributor-svg-generator)
+- [organize-contributors](https://github.com/thinkasany/organize-contributors)
