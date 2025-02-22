@@ -6,7 +6,6 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "update-sponsors": "sponsorkit",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -14,18 +13,6 @@
   "license": "ISC",
   "packageManager": "pnpm@10.4.1",
   "dependencies": {
-    "make-github-contributor-svg": "^1.0.2",
-    "sponsorkit": "^16.3.0"
-  },
-  "devDependencies": {
-    "@types/node": "^22.13.4"
-  },
-  "pnpm": {
-    "ignoredBuiltDependencies": [
-      "esbuild"
-    ],
-    "onlyBuiltDependencies": [
-      "sharp"
-    ]
+    "make-github-contributor-svg": "^1.0.2"
   }
 }
