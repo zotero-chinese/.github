@@ -66,7 +66,7 @@ jobs:
       - run: pnpm i
 
       - name: Update sponsors
-        run: npm run build
+        run: pnpm update-sponsors
         env:
           SPONSORKIT_AFDIAN_USER_ID: ${{ secrets.SPONSORKIT_AFDIAN_USER_ID }}
           SPONSORKIT_AFDIAN_TOKEN: ${{ secrets.SPONSORKIT_AFDIAN_TOKEN }}
