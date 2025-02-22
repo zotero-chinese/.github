@@ -25,7 +25,3 @@
 ## 贡献者
 
 ![贡献者名单](../.github-contributors/contributors.png)
-
-<!-- ## 赞助者
-
-![赞助者](../sponsorkit/sponsors.svg) -->

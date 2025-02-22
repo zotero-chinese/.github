@@ -8,12 +8,7 @@
 
 社区赞助者存储于 `sponsorkit/`。
 
-<!-- ## 赞助者
-
-![赞助者](../sponsorkit/sponsors.svg) -->
-
 ## 致谢
 
-- [SponsorKit](https://github.com/antfu/sponsorkit)
 - [make-github-contributor-svg](https://github.com/ShenQingchuan/github-contributor-svg-generator)
 - [organize-contributors](https://github.com/thinkasany/organize-contributors)
